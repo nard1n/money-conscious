@@ -21,7 +21,6 @@ self.addEventListener('install', (event) => {
   );
 });
 
-// The activate handler takes care of cleaning up old caches.
 self.addEventListener('activate', (event) => {
   const currentCaches = [PRECACHE, RUNTIME];
   event.waitUntil(
@@ -41,29 +40,24 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-self.addEventListener("fetch", function(evt) {
+self.addEventListener("fetch", function (evt) {
     if (evt.request.url.includes("/api/")) {
       evt.respondWith(
         caches.open(RUNTIME).then(cache => {
           return fetch(evt.request)
             .then(response => {
-              // If the response was good, clone it and store it in the cache.
               if (response.status === 200) {
                 cache.put(evt.request.url, response.clone());
               }
-  
               return response;
             })
             .catch(err => {
-              // Network request failed, try to get it from the cache.
               return cache.match(evt.request);
             });
         }).catch(err => console.log(err))
       );
-  
       return;
     }
-  
     evt.respondWith(
       caches.open(PRECACHE).then(cache => {
         return cache.match(evt.request).then(response => {
