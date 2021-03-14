@@ -6,11 +6,9 @@
 Money Conscious is a budget tracking application. It gives users simple way to track their money and access that information anytime (online and offline).
 
 Screenshot of application:
-![Screenshot](./public/images/moneyapp.gif)
+![Screenshot](./public/icons/screenshot.png)
 
-Deployed app is deployed to Heroku, [here](https://...)
-
-To watch a screencast of the running application, please click here: [Screencast](https://...)
+Deployed app is deployed to Heroku, [here](https://mysterious-wildwood-29821.herokuapp.com/)
 
 ## Table of Contents
 
@@ -32,7 +30,7 @@ To install, simply clone or download the repository. There are some NPM dependen
 -- npm i morgan (optional)
 
 ## Usage
-...
+The app allows the user the ability to track expenses and deposits to their budget while online or offline. If the user adds the transaction while offline, it will get added when connection is reestablished.
 
 
 ## Contributing
