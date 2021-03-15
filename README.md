@@ -6,7 +6,7 @@
 Money Conscious is a budget tracking application. It gives users simple way to track their money and access that information anytime (online and offline).
 
 Screenshot of application:
-![Screenshot](./public/icons/screenshot.png)
+![Screenshot](./public/icons/screenshott.png)
 
 Deployed app is deployed to Heroku, [here](https://mysterious-wildwood-29821.herokuapp.com/)
 
