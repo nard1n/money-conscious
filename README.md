@@ -47,4 +47,4 @@ https://opensource.org/licenses/BSD-2-Clause
 ## Questions
 For more about my work, check out my Github profile: https://github.com/nard1n
 
-If you have any questions and would like to chat, please feel free to send me an email directly to nardin.lachowski@gmail.com
+If you have any questions and would like to chat, please feel free to send me an email directly to nardincodes@gmail.com
